@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>REDLINE — PDF review that travels</title>
+<meta name="description" content="REDLINE is a PDF review tool. Mark up documents with comments, highlights, and shapes that open in any PDF reader.">
+<style>
+  :root {
+    --ink: #1c1c1e;
+    --paper: #fcfbf9;
+    --red: #c8102e;
+    --muted: #6e6e73;
+    --rule: #e4e2dd;
+  }
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 56px 0 0; }
+  .wordmark {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.18em;
+    text-decoration: line-through;
+    text-decoration-color: var(--red);
+    text-decoration-thickness: 2px;
+  }
+  main { padding: 72px 0 48px; }
+  h1 {
+    font-size: clamp(32px, 6vw, 46px);
+    font-weight: 400;
+    line-height: 1.15;
+    max-width: 14em;
+  }
+  h1 em {
+    font-style: normal;
+    border-bottom: 3px solid var(--red);
+  }
+  .lede { margin-top: 24px; font-size: 19px; color: var(--muted); max-width: 32em; }
+  .what {
+    margin-top: 56px;
+    border-top: 1px solid var(--rule);
+    padding-top: 32px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+  }
+  .what p { margin-bottom: 14px; max-width: 38em; }
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 28px 0 56px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  footer a { color: var(--ink); }
+  footer a:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+  .links { display: flex; gap: 20px; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="wordmark">REDLINE</span>
+    </header>
+    <main>
+      <h1>PDF review that <em>travels</em>.</h1>
+      <p class="lede">Mark up a document with sticky-note comments, highlights, strikeouts, ink, and shapes. Every annotation is written into the PDF itself — so your review opens intact in Acrobat, Preview, or any other reader, no REDLINE required.</p>
+      <div class="what">
+        <p>REDLINE runs in your browser. Your documents are processed transiently to apply your edits and are not stored on our servers. Annotation review states (status, assignee, notes) stay on your device.</p>
+        <p>When you connect a Google account, REDLINE accesses only the files you select — never your full Drive. Details in the privacy policy.</p>
+      </div>
+    </main>
+    <footer>
+      <div class="links">
+        <a href="/privacy.html">Privacy policy</a>
+        <a href="/terms.html">Terms of service</a>
+      </div>
+      <div>© 2026 Terenc LLC · support@redlinedoc.app</div>
+    </footer>
+  </div>
+</body>
+</html>
