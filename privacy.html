@@ -3,34 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — REDLINE</title>
+<title>Privacy Policy — RedLine</title>
+<link rel="icon" type="image/svg+xml" href="/app-icon.svg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/fontsource/css/archivo@latest/index.css">
 <style>
   :root {
-    --ink: #1c1c1e;
-    --paper: #fcfbf9;
-    --red: #c8102e;
-    --muted: #6e6e73;
-    --rule: #e4e2dd;
+    --ink: #1A1714;
+    --paper: #FAF8F4;
+    --signal: #E2261C;
+    --muted: #6E675E;
+    --rule: #E3DFD8;
   }
   * { margin: 0; box-sizing: border-box; }
   body {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
     background: var(--paper);
     color: var(--ink);
     line-height: 1.65;
   }
   .wrap { max-width: 680px; margin: 0 auto; padding: 0 24px 72px; }
   header { padding: 56px 0 0; }
-  .wordmark {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    letter-spacing: 0.18em;
-    text-decoration: line-through;
-    text-decoration-color: var(--red);
-    text-decoration-thickness: 2px;
-  }
-  .wordmark a { color: inherit; text-decoration: inherit; }
+  .wordmark { display: inline-block; line-height: 0; }
+  .wordmark a { display: inline-block; }
+  .rl-wordmark { width: 132px; height: auto; display: block; }
   h1 { font-size: 32px; font-weight: 400; margin: 48px 0 4px; }
   .effective {
     font-family: "Helvetica Neue", Arial, sans-serif;
@@ -51,10 +46,10 @@
   p { margin-bottom: 14px; }
   ul { margin: 0 0 14px 22px; }
   li { margin-bottom: 8px; }
-  a { color: var(--ink); text-decoration-color: var(--red); }
-  a:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+  a { color: var(--ink); text-decoration-color: var(--signal); }
+  a:focus-visible { outline: 2px solid var(--signal); outline-offset: 2px; }
   .limited-use {
-    border-left: 3px solid var(--red);
+    border-left: 3px solid var(--signal);
     padding: 4px 0 4px 16px;
     margin: 14px 0;
   }
@@ -62,26 +57,38 @@
 </head>
 <body>
   <div class="wrap">
-    <header><span class="wordmark"><a href="/">REDLINE</a></span></header>
+    <header><span class="wordmark"><a href="/" aria-label="RedLine home"><svg class="rl-wordmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 124" role="img" aria-label="RedLine">
+        <defs>
+          <clipPath id="ghost-clip-p"><text x="230" y="92" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="900" font-size="68" letter-spacing="-2">RedLine</text></clipPath>
+        </defs>
+        <text x="230" y="92" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="900" font-size="68" letter-spacing="-2" fill="#1A1714">RedLine</text>
+        <line x1="48" y1="72" x2="412" y2="72" stroke="#E2261C" stroke-width="11" stroke-linecap="round"></line>
+        <g clip-path="url(#ghost-clip-p)">
+          <line x1="48" y1="72" x2="412" y2="72" stroke="#1A1714" stroke-width="11" stroke-linecap="round"></line>
+          <line x1="48" y1="72" x2="412" y2="72" stroke="rgba(226,38,28,0.25)" stroke-width="11" stroke-linecap="round"></line>
+        </g>
+        <circle cx="24" cy="72" r="11" fill="none" stroke="#E2261C" stroke-width="8"></circle>
+        <circle cx="436" cy="72" r="11" fill="none" stroke="#E2261C" stroke-width="8"></circle>
+      </svg></a></span></header>
 
     <h1>Privacy Policy</h1>
-    <p class="effective">Effective date: June 12, 2026 · REDLINE is operated by Terenc LLC ("we", "us")</p>
+    <p class="effective">Effective date: June 12, 2026 · RedLine is operated by Terenc LLC ("we", "us")</p>
 
-    <p>REDLINE is a PDF review tool available at redlinedoc.app. This policy describes what information REDLINE handles, how it is used, and the choices you have. The short version: your documents are yours. We process them only to perform the edits you request, we do not store them on our servers, and we do not sell or share your information with anyone.</p>
+    <p>RedLine is a PDF review tool available at redlinedoc.app. This policy describes what information RedLine handles, how it is used, and the choices you have. The short version: your documents are yours. We process them only to perform the edits you request, we do not store them on our servers, and we do not sell or share your information with anyone.</p>
 
     <h2>1. Information we handle</h2>
-    <p><strong>Documents you open.</strong> When you open a PDF in REDLINE, the file is processed in your browser and sent to our server only transiently to apply the annotations and page operations you request (for example, adding a comment or reordering pages). The modified file is returned to your browser. We do not retain copies of your documents after the request completes, and we do not read, analyze, or use their contents for any purpose other than performing the operation you asked for.</p>
+    <p><strong>Documents you open.</strong> When you open a PDF in RedLine, the file is processed in your browser and sent to our server only transiently to apply the annotations and page operations you request (for example, adding a comment or reordering pages). The modified file is returned to your browser. We do not retain copies of your documents after the request completes, and we do not read, analyze, or use their contents for any purpose other than performing the operation you asked for.</p>
     <p><strong>Annotation review data.</strong> Review states you attach to annotations — actionable flags, status, assignee, and notes — are stored locally in your browser (localStorage) on your device. They are not transmitted to or stored by us.</p>
     <p><strong>Reviewer name.</strong> If you set a display name, it is stored locally on your device and, where you choose to attach it, written into the PDF's annotation author field so that other readers of the document can see who made each comment.</p>
     <p><strong>Technical data.</strong> Our hosting infrastructure may record standard server logs (IP address, request time, user agent) for security and reliability. These logs are not used for advertising or profiling.</p>
 
     <h2>2. Google user data</h2>
-    <p>If you choose to sign in with Google and connect Google Drive, REDLINE requests the following from Google's APIs:</p>
+    <p>If you choose to sign in with Google and connect Google Drive, RedLine requests the following from Google's APIs:</p>
     <ul>
       <li><strong>Basic profile information</strong> (name, email address, profile picture) — used to identify you in the app and to label your annotations with your name when you choose to do so.</li>
-      <li><strong>Per-file Drive access</strong> (the <code>drive.file</code> scope) — this grants access <em>only</em> to the specific files you select through the Google file picker or that you create with REDLINE. REDLINE cannot see, list, or access the rest of your Google Drive.</li>
+      <li><strong>Per-file Drive access</strong> (the <code>drive.file</code> scope) — this grants access <em>only</em> to the specific files you select through the Google file picker or that you create with RedLine. RedLine cannot see, list, or access the rest of your Google Drive.</li>
     </ul>
-    <p>Google user data is used solely to provide REDLINE's core features: opening the document you selected, saving your annotated version back to your Drive, and attributing your annotations. Specifically:</p>
+    <p>Google user data is used solely to provide RedLine's core features: opening the document you selected, saving your annotated version back to your Drive, and attributing your annotations. Specifically:</p>
     <ul>
       <li>We do not transfer Google user data to third parties.</li>
       <li>We do not use Google user data for advertising of any kind.</li>
@@ -90,10 +97,10 @@
       <li>We do not use Google user data, including your documents, to train or develop machine-learning or artificial-intelligence models.</li>
     </ul>
     <div class="limited-use">
-      <p>REDLINE's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+      <p>RedLine's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
     </div>
     <p><strong>Storage and retention.</strong> Files accessed from Google Drive are processed transiently as described in Section 1 and are not stored on our servers. Authentication tokens are stored on your device and used only to access the files you selected.</p>
-    <p><strong>Revoking access.</strong> You can revoke REDLINE's access to your Google account at any time at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. Revoking access does not affect files already saved to your Drive or device.</p>
+    <p><strong>Revoking access.</strong> You can revoke RedLine's access to your Google account at any time at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. Revoking access does not affect files already saved to your Drive or device.</p>
 
     <h2>3. What we don't do</h2>
     <ul>
@@ -109,10 +116,10 @@
     <p>All traffic between your browser, our servers, and Google's APIs is encrypted in transit (HTTPS/TLS). Because documents are not stored on our servers, the primary copies of your data remain on your device and in your own Drive.</p>
 
     <h2>6. Children</h2>
-    <p>REDLINE is not directed at children under 13, and we do not knowingly collect personal information from them.</p>
+    <p>RedLine is not directed at children under 13, and we do not knowingly collect personal information from them.</p>
 
     <h2>7. Your rights</h2>
-    <p>Because REDLINE stores essentially no personal data server-side, most data lives on your device and in your Google account, where you control it directly. If you believe we hold personal information about you and you would like it accessed, corrected, or deleted, contact us and we will respond promptly. Depending on where you live, you may have additional rights under laws such as the GDPR or the California Consumer Privacy Act.</p>
+    <p>Because RedLine stores essentially no personal data server-side, most data lives on your device and in your Google account, where you control it directly. If you believe we hold personal information about you and you would like it accessed, corrected, or deleted, contact us and we will respond promptly. Depending on where you live, you may have additional rights under laws such as the GDPR or the California Consumer Privacy Act.</p>
 
     <h2>8. Changes to this policy</h2>
     <p>If we make material changes to this policy, we will update the effective date above and, where appropriate, provide notice in the app. Continued use after changes take effect constitutes acceptance.</p>
